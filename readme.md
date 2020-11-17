@@ -1,4 +1,4 @@
-# Teste de contratos inteligentes
+# Interface para loteria
 
 Projeto desenvolvimento pelo professor Jauberth Weyll Abijaude.
 
@@ -6,6 +6,24 @@ Apresentação auxiliar por Henrique Andrade Serra
 
 ## Configurações iniciais
 
-Rode o comando `npm install --save`
+## Rodando projeto
 
-Para rodar os testes use o comando `npm test`
+Instalando dependencias
+
+```sh
+$ npm install --save
+
+# ou
+
+$ yarn
+```
+
+### Rodando projeto
+
+```sh
+$ npm start
+
+# ou
+
+$ yarn start
+```
