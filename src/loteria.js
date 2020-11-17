@@ -1,59 +1,60 @@
 import web3 from "./web3";
 // importe o web3
-const address = "0x4488053C6854b615b9eeC8160eD34bF8c8Ae64A6";
+const address = "0x74F774570C3DBA08653151C75124289243d68b47";
 // copie e cole o endereço do console
 const abi = [
   {
-    constant: true,
     inputs: [],
-    name: "getJogadores",
-    outputs: [{ name: "", type: "address[]" }],
-    payable: false,
-    stateMutability: "view",
-    type: "function"
+    stateMutability: "nonpayable",
+    type: "constructor",
+    signature: "constructor",
   },
   {
-    constant: true,
     inputs: [],
     name: "gerente",
-    outputs: [{ name: "", type: "address" }],
-    payable: false,
+    outputs: [{ internalType: "address", name: "", type: "address" }],
     stateMutability: "view",
-    type: "function"
+    type: "function",
+    constant: true,
+    signature: "0x9e18d087",
   },
   {
-    constant: false,
+    inputs: [],
+    name: "getJogadores",
+    outputs: [
+      { internalType: "address payable[]", name: "", type: "address[]" },
+    ],
+    stateMutability: "view",
+    type: "function",
+    constant: true,
+    signature: "0x0040b837",
+  },
+  {
+    inputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    name: "jogadores",
+    outputs: [{ internalType: "address payable", name: "", type: "address" }],
+    stateMutability: "view",
+    type: "function",
+    constant: true,
+    signature: "0xfdcd0731",
+  },
+  {
     inputs: [],
     name: "jogar",
     outputs: [],
-    payable: true,
     stateMutability: "payable",
-    type: "function"
+    type: "function",
+    payable: true,
+    signature: "0xbd6ac043",
   },
   {
-    constant: false,
     inputs: [],
     name: "sorteio",
     outputs: [],
-    payable: false,
     stateMutability: "nonpayable",
-    type: "function"
+    type: "function",
+    signature: "0xc1f27e47",
   },
-  {
-    constant: true,
-    inputs: [{ name: "", type: "uint256" }],
-    name: "jogadores",
-    outputs: [{ name: "", type: "address" }],
-    payable: false,
-    stateMutability: "view",
-    type: "function"
-  },
-  {
-    inputs: [],
-    payable: false,
-    stateMutability: "nonpayable",
-    type: "constructor"
-  }
 ];
 
 // copie e cole a interface gerada no console
